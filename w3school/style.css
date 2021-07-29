@@ -1,0 +1,196 @@
+body {
+  background-color: rgb(170, 219, 219);
+}
+.uper {
+  background-color: #f1f1f1;
+}
+
+/* Dropdown for Toutorial */
+#dropdown-content {
+  color: black;
+  padding-left: 10px;
+}
+#logo {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content-2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: rgb(243, 241, 241);
+  background-color: rgb(3, 2, 2);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: rgb(179, 88, 88);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* paid courses btn */
+#paidbtn {
+  background-color: #f4fffb;
+  color: rgb(24, 18, 18);
+  padding: 16px;
+  overflow: hidden;
+  font-size: 16px;
+  border: none;
+  margin-left: 50%;
+}
+#logbtn {
+  background-color: rgb(27, 184, 48);
+  height: 50px;
+  width: 100px;
+  border-radius: 14px;
+}
+/* Nevigation Bar */
+header {
+  display: inline;
+  color: black;
+}
+
+#navid {
+  align-items: center;
+}
+
+ul {
+  overflow: hidden;
+  background-color: rgb(21, 39, 21);
+  color: #ddd;
+}
+ul :hover {
+  background-color: rgb(226, 210, 210);
+  color: black;
+}
+ul :hover :visited {
+  background-color: yellow;
+}
+li {
+  list-style: none;
+  float: left;
+  padding: 12px;
+}
+/* searchbar */
+.searchbar input[type="text"] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+/* scrollbar */
+.list_container {
+  direction: rtl;
+  overflow: auto;
+  height: 250px;
+  width: 50px;
+}
+
+.item_direction {
+  direction: rtl;
+}
+/* vertical slide bar */
+.vertical-menu {
+  display: inline-block;
+  position: fixed;
+  width: 200px;
+  height: 400px;
+
+  overflow: scroll;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: rgb(226, 78, 78);
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+/* body */
+
+.text {
+  overflow-y: hidden;
+  margin-left: 20%;
+  padding-left: 50px;
+}
+.main_content {
+  width: 100%;
+  margin-left: 350px;
+  overflow: hidden;
+}
+.bodybtn {
+  width: 120%;
+  margin-left: 220px;
+}
+.bodybtn-next {
+  width: 100%;
+  margin-left: 80%;
+}
+/* Content for html */
+.box {
+  padding-left: 9px;
+  height: 200px;
+  width: 30%;
+  background-color: (170, 219, 219);
+
+  margin-left: 350px;
+  border-radius: 1 4px;
+}
+#start {
+  border-radius: 14px;
+}
