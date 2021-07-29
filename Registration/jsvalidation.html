@@ -1,0 +1,108 @@
+<!-- Registration form using javascript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formdesign {
+            font-size: 20px;
+            /* padding: 2px; */
+            margin: 20px;
+        }
+
+
+
+        .register {
+            border: 4px solid black;
+            background-color: thistle;
+
+        }
+
+        #regi {
+            padding-left: 35%;
+        }
+
+        #comment {
+            padding-left: 23%;
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="register">
+
+        <form action="message.html" method="POST">
+            <h1 id="regi"> --------Register----------</h1>
+            <h2 id="comment">Create your account it's free and only takes a minute.</h2>
+
+
+
+            Name:<input type="text" id="name" placeholder="Enter Your Name" class="formdesign"><br>
+            Address:<input type="text" id="address" placeholder="Enter Your Address" class="formdesign"><br>
+            Mobile:<input type="number" id="mobile" placeholder="Enter Your Number" class="formdesign"
+                minlength="5"><br>
+            Email:<input type="email" id="email" placeholder="Enter your Email." class="formdesign"><br>
+            Remark:<input type="email" id="remark" placeholder="Anything you want to share" class="formdesign"><br>
+
+
+            <input type="button" value="Submit" onclick="validate()">
+        </form>
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+    function validate() {
+        var username = document.getElementById("name")
+        var address = document.getElementById("address")
+        var mobile = document.getElementById("mobile")
+        var remark = document.getElementById("remark")
+        if (username.value == "") {
+            alert("Enter Yourname")
+        }
+
+
+        else if (address.value == "") {
+            alert("Enter address")
+        }
+        else if (mobile.value == "") {
+            alert("Enter your contact number")
+        }
+        // else if (email.value == "") {
+        //     alert("Enter email")
+
+        // }
+        else if (remark.value == "") {
+            alert("Blacnk field not allowded")
+        }
+
+
+
+
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@+[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email.value)) {
+            return (true)
+        }
+        alert("You have entered an invalid email address!")
+        return (false)
+
+
+
+    }
+
+
+
+
+
+
+
+</script>
+
+</html>

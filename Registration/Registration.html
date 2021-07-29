@@ -1,0 +1,123 @@
+<!-- Registration form having validation without javascript  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+
+            background-color: rgb(240, 240, 240);
+            padding: 10px 50px;
+        }
+
+        .formdesign {
+            font-size: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .formdesign input {
+            width: 14%px;
+            height: 18px;
+            border: 1px solid rebeccapurple;
+            border-radius: 4px;
+            margin: 5px;
+            padding: auto;
+        }
+
+
+
+        .register {
+
+            border: 4px solid black;
+            border-width: 55%;
+            box-sizing: content-box;
+
+        }
+
+        #regi {
+
+
+            padding-left: 35%;
+        }
+
+        #comment {
+            padding-left: 23%;
+
+        }
+
+        .lname {
+            margin-left: 12%;
+        }
+
+        .but {
+            border-radius: 9px;
+            width: 100px;
+            height: 50px;
+            font-size: 25px;
+            margin: 22px 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="">
+
+        <div class="register">
+
+            <h1 id="regi"> --------Register----------</h1>
+            <h2 id="comment">Create your account it's free and only takes a minute.</h2>
+            <div class="formdesign" id="name">
+                Name:<input type="text" name="fname" maxlength="5">
+                Last Name:<input type="text" name="lname" required class="lname"><b><span class="formerror">
+                    </span></b>
+            </div>
+
+            <div class="formdesign" id="address">
+                Address:<input type="text" name="address">
+
+            </div>
+
+            <div class="formdesign" id="mobile">
+                Mobile:<input type="text" name="mobile" max="10" pattern="[1-9]" required>
+            </div>
+
+            <div class="formdesign">
+                Email:<input type="email" name="email" required>
+            </div>
+
+            <div class="formdesign" id="name">
+                Remark:<input type="textarea" name="remark" required>
+            </div>
+            <input class="but" type="submit" value="Submit" onclick="validate()">
+        </div>
+
+    </form>
+</body>
+
+<script>
+
+    function validate() {
+        var username = document.getElementById("name")
+        var address = document.getElementById("address")
+        if (username.value == "") {
+            alert("Enter Yourname")
+        }
+
+
+        else if (address.value == "") {
+            alert("Enter address")
+        }
+    }
+</script>
+
+
+</html>
